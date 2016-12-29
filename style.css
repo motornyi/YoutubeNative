@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+
+.app {
+  height: 100vh;
+}
+
+.frame {
+  width: 100%;
+  height: calc(100% - 30px);
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  background-color: #333;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input {
+  display: block;
+  width: 200px;
+  height: 18px;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #4BBBFA;
+  background-color: rgba(0, 0, 0, 0);
+  color: #eee;
+  -webkit-user-select: all;  /* Chrome 49+ */
+  -moz-user-select: all;     /* Firefox 43+ */
+  -ms-user-select: all;      /* No support yet */
+  user-select: all;   
+}
+
+.search-icon {
+  margin-right: 5px;
+  height: 18px;
+}
+
+.icon-resize {
+  height: 18px;
+  transform: rotate(-90deg);
+}
+
+.background {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #4BBBFA;
+  font-weight: 100;
+  font-family: sans-serif;
+}
