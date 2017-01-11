@@ -6,6 +6,7 @@ function attachCallback() {
       if (e.keyCode != 13) return;
 
       setUrl(e.target.value);
+      e.target.value = '';
     });
 }
 

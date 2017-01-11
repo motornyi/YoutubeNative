@@ -8,18 +8,27 @@ body {
   height: 100vh;
 }
 
+.app:hover .owerlay {
+  display: flex;
+}
+
 .frame {
   width: 100%;
-  height: calc(100% - 30px);
+  height: 100%;
 }
 
 
-.header {
-  display: flex;
+.owerlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
   align-items: center;
-  justify-content: space-between;
-  height: 30px;
-  background-color: #333;
+  justify-content: center;
+  height: 50px;
+  background-color: rgba(0,0,0,.9);
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
@@ -29,26 +38,23 @@ body {
 .search {
   display: flex;
   justify-content: space-around;
+  margin: auto;
 }
 
 .input {
   display: block;
-  width: 200px;
-  height: 18px;
+  width: 300px;
+  height: 28px;
   outline: 0;
   border: 0;
   border-bottom: 1px solid #4BBBFA;
   background-color: rgba(0, 0, 0, 0);
   color: #eee;
-  -webkit-user-select: all;  /* Chrome 49+ */
-  -moz-user-select: all;     /* Firefox 43+ */
-  -ms-user-select: all;      /* No support yet */
-  user-select: all;   
 }
 
 .search-icon {
   margin-right: 5px;
-  height: 18px;
+  height: 28px;
 }
 
 .icon-resize {
