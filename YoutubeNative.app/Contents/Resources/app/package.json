@@ -1,0 +1,16 @@
+{
+  "name": "youtube-native",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "electron-packager  ~/Documents/js/youtube-chrome YoutubeNative --mac --version=0.2.0 --out=~/Desktop --overwrite --icon= ~/Documents/js/youtube-chrome/icon.ico",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.4.13",
+    "electron-prebuilt": "^1.4.13"
+  }
+}
