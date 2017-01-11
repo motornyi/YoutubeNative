@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+
+.app {
+  height: 100vh;
+}
+
+.app:hover .owerlay {
+  display: flex;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+}
+
+
+.owerlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: rgba(0,0,0,.9);
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.input {
+  display: block;
+  width: 300px;
+  height: 28px;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #4BBBFA;
+  background-color: rgba(0, 0, 0, 0);
+  color: #eee;
+}
+
+.search-icon {
+  margin-right: 5px;
+  height: 28px;
+}
+
+.icon-resize {
+  height: 18px;
+  transform: rotate(-90deg);
+}
+
+.background {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #4BBBFA;
+  font-weight: 100;
+  font-family: sans-serif;
+}

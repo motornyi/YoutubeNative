@@ -1,0 +1,26 @@
+{
+  "name": "youtube-chrome",
+  "version": "0.2.0",
+  "description": "<img src=\"./screenshot.png\">",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^1.4.13",
+    "electron-prebuilt": "^1.4.13",
+    "electron-packager": "^8.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "electron-packager ~/Documents/js/youtube-chrome YoutubeNative --mac  --icon=./icon.icns",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorMotorny/YoutubeNative.git"
+  },
+  "author": "Ihor Motornyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IgorMotorny/YoutubeNative/issues"
+  },
+  "homepage": "https://github.com/IgorMotorny/YoutubeNative#readme"
+}
